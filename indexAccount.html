@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>赛博朋克2077——正版预购低至¥1??</title>
+		<link rel="Shortcut Icon" href="https://www.cyberpunk.net/favicon.ico" type="image/x-icon">
+		<meta name="description" content="投身赛博朋克2077的世界——这是一款由《巫师》系列游戏制作团队CD PROJEKT RED打造，以黑暗未来为舞台，通过丰富剧情推动的开放世界角色扮演游戏。">
+		<link rel="stylesheet" type="text/css" href="./css/common.css">
+		<link rel="stylesheet" type="text/css" href="./css/cyberpunkAccount.css">
+		<style type="text/css">	
+		</style>
+		 <script type='text/javascript' src='https://ykf-webchat.7moor.com/javascripts/7moorInit.js?accessId=fcf8c550-a8aa-11ea-8eb0-574d99a06c2c&autoShow=false&language=ZHCN' async='async'></script>
+	</head>
+	<body>	
+		<div id="container">
+			<!-- 重复购买的界面 -->
+			<div id="replace" class="undernone">
+				<div class="replaceGame">您已购买该款游戏!</div>
+				<button class="updown">
+					<a href="https://grsource.we4game.com/packet/channel/SteamOnline_SBPK2.exe">下载客户端查看</a>
+				</button>
+			</div>
+			
+			<!-- 支付成功 -->
+			<div id="paysuccess" class="undernone">
+				<div class="close"></div>
+				<div class="textBox">
+					<div class="success">
+						<div class="pic"></div>
+						<div class="paytext">支付成功</div>
+					</div>
+				</div>
+				<div class="text">请点击下载客户端，接收您的游戏</div>
+
+				<button class="updown">
+					<a href="https://grsource.we4game.com/packet/channel/SteamOnline_SBPK2.exe">下载客户端</a>
+				</button>
+			</div>
+			<!-- 视频框遮罩 -->
+			<div id="blackBtn" class="undernone"></div>
+			<div id="blackBack" class="undernone"></div>
+			<!-- 弹出视频框 -->
+			<div id="showVideo" class="undernone">
+				<video
+					autoplay
+					muted
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256811816/movie480_vp9.webm?t=1606827118">
+				</video>
+				<video
+					autoplay
+					muted
+					class="undernone"
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256790943/movie480_vp9.webm?t=1606851999">
+				</video>
+				<video
+					autoplay
+					muted
+					class="undernone"
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256805121/movie480_vp9.webm?t=1602863747">
+				</video>
+				<video
+					autoplay
+					muted
+					class="undernone"
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256805103/movie480_vp9.webm?t=1602864450">
+				</video>
+				<video
+					autoplay
+					muted
+					class="undernone"
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256804486/movie480_vp9.webm?t=1602505162">
+				</video>
+				<video
+					autoplay
+					muted
+					class="undernone"
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256804488/movie480_vp9.webm?t=1602505153">
+				</video>
+				<video
+					autoplay
+					muted
+					class="undernone"
+					controls
+					src="https://media.st.dl.pinyuncloud.com/steam/apps/256796175/movie480_vp9.webm?t=1597746816">
+				</video>
+			</div>
+			
+			
+			<!-- 支付界面 -->
+			<div id="payment" class="undernone">
+				<div class="payhead">
+					<div class="close"></div>
+				</div>
+				<div class="paybody">
+					<!-- 支付左边 -->
+					<div class="left">
+						<div class="leftBox">
+							<!-- 游戏名称和类型 -->
+							<div class="gameName">
+								<div class="name">
+									<span>游戏名称</span>
+									<span>赛博朋克2077</span>
+								</div>
+								<!-- <div class="buyclass">
+									<span>购买类型</span>
+									<span>独享版</span>
+								</div> -->
+							</div>
+							<!-- 选择优惠 -->
+							<div class="discount">
+								<div class="change">选择购买类型</div>
+								<!-- 合玩版 -->
+								<div class="together isactive">
+									<div class="infogame">
+										<div class="accountPic"></div>
+										<div class="edition">畅享版</div>
+									</div>
+									<div class="priceBox">
+										<div class="oldprice">￥299</div>
+										<div class="nowprice"></div>
+									</div>
+								</div>
+								<!-- 独享版 -->
+								<!-- <div class="speacPrice unactive">
+									<div class="infogame">
+										<div class="accountPic"></div>
+										<div class="edition">独享版</div>
+									</div>
+									<div class="priceBox">
+										<div class="oldprice">￥299</div>
+										<div class="nowprice"></div>
+									</div>
+								</div> -->
+							</div>
+							<!-- 获取手机号 -->
+							<div class="phone">
+								<span>请输入手机号</span>
+								<div class="inputPhone">
+									<input id="phone" type="text" class="account" value="" placeholder="&nbsp;输入账号" autocomplete="off">
+									<button class="code">获取验证码</button>
+									<div class="finish undernone"></div>
+								</div>
+								<div class="getNum">
+									<div class="readyPhone">
+										<input type="text" class="password">
+									</div>
+									<div class="actives btn blue"></div>
+								</div>
+							</div>
+							<!-- 极速发货 -->
+							<div class="info togerefund"></div>
+						</div>
+					</div>
+					
+					<!-- 支付右边 -->
+					<div class="right">
+						<div class="rightBox">
+							<!-- 支付方式 -->
+							<span>选择支付方式</span>
+							<!-- 微信支付宝 -->
+							<div class="payway">
+								<div class="wechat weSelect"></div>
+								<div class="alipay aliuncheck"></div>
+							</div>
+							<!-- 二维码 -->
+							<div class="qrcode">
+								<div class="codePic">
+									<img src="./images/phoneVer.png" alt="">
+								</div>
+								<div class="priceBox">
+									<div class="waitfor">待付金额</div>
+									<div class="price">￥<span>1??</span></div>
+									<div class="countprice">已优惠￥<span>??</span>元</div>
+									<div class="userservice">《用户服务协议》</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="payfoot"></div>
+			</div>
+			
+			<div id="homepage">
+				<!-- 首页人物图 -->
+				<div class="showGame">
+					<!-- 播放视频 -->
+					<div class="playVideo">
+						<!-- <img src="./images/play.png" alt=""> -->
+						<video autoplay
+							   muted
+						       src="https://media.st.dl.pinyuncloud.com/steam/apps/256810254/movie_max_vp9.webm?t=1605891174">
+						</video>
+						<video autoplay
+							   muted
+							   class="none"
+						       src="https://media.st.dl.pinyuncloud.com/steam/apps/256783780/movie480_vp9.webm?t=1589876604">
+						</video>
+						<video autoplay
+							   muted
+							   class="none"
+						       src="https://media.st.dl.pinyuncloud.com/steam/apps/256775079/movie480.webm?t=1581607833">
+						</video>
+						<video autoplay
+							   muted
+							   class="none"
+						       src="https://media.st.dl.pinyuncloud.com/steam/apps/256751874/movie480.webm?t=1606827148">
+						</video>
+						</div>
+					<!-- 切换视频 -->
+					<div class="changeVideo">
+						<ul class="active"></ul>
+						<ul></ul>
+						<ul></ul>
+						<ul></ul>
+					</div>
+					
+					<!-- 发售日期 -->
+					<div class="sellDate">
+						<p>现已解锁，抢首发游玩!</p>
+						<img src="./images/blackLine.png" alt="">
+					</div>
+					
+					<!-- 购买按钮和折扣 -->
+					<div class="priceBox">
+						<!-- 购买按钮背景 -->
+						<div class="backgroundBox">
+							<!-- 售卖价格 -->
+							<div class="sellPrice">
+								<div class="newPrice">￥1??</div>
+								<div class="oldPrice">￥299</div>
+							</div>
+							<!-- 折扣 -->
+							<div class="discount">
+								<div class="preOrder">首发特价</div>
+							</div>
+							<!-- 按钮 -->
+							<button class="buyBtn">
+								<!-- <a href="https://grsource.we4game.com/packet/channel/SteamOnline_SBPK1_1091500.exe">立即下载</a> -->
+							</button>
+						</div>
+					</div>
+					
+					<!-- 联系客户按钮 -->
+					<div class="customerService" onclick="qimoChatClick()">	
+					</div>
+				</div>
+				<!-- 人物下方视频banner -->
+				<div class="videoBanner">
+					<div class="logo"></div>
+					<!-- 视频长框 -->
+					<div class="showVideoBox">
+						<div class="moveBox">
+							<!-- 单个视频框 -->
+							<div class="video">
+								<div class="playMask active"></div>
+								<div class="backPic">
+									<img src="./images/video11.png" alt="">
+								</div>
+							</div>
+							<div class="video">
+								<div class="playMask"></div>
+								<div class="backPic">
+									<img src="./images/video22.png" alt="">
+								</div>
+							</div>
+							<div class="video">
+								<div class="playMask"></div>
+								<div class="backPic">
+									<img src="./images/video33.png" alt="">
+								</div>
+							</div>
+							<div class="video">
+								<div class="playMask"></div>
+								<div class="backPic">
+									<img src="./images/video44.png" alt="">
+								</div>
+							</div>
+							<div class="video">
+								<div class="playMask"></div>
+								<div class="backPic">
+									<img src="./images/video55.png" alt="">
+								</div>
+							</div>
+							<div class="video">
+								<div class="playMask"></div>
+								<div class="backPic">
+									<img src="./images/video66.png" alt="">
+								</div>
+							</div>
+							<div class="video">
+								<div class="playMask"></div>
+								<div class="backPic">
+									<img src="./images/video77.png" alt="">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!-- 切换视频按钮 -->
+					<div class="btnBox">
+						<div class="leftBtn">
+							<img src="./images/left.png" alt="">
+						</div>
+						<div class="rightBtn">
+							<img src="./images/right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 滚动图一连 -->
+			<div id="scroll">
+				<div id="scrollOne">
+					<div class="screenOne"></div>
+					<div class="yellowBack">
+						<p class="title">夜之城让你浴火重生</p>
+						<p class="text">《赛博朋克2077》是一款开放世界动作冒险游戏，故事发生在夜之城。这是一座五光十色的大都会，权力更迭和身体改造是不变的主题。您扮演一名野心勃勃的雇佣兵：V，正在追寻一种独一无二的植入体。只要得到它，就能掌握获得永生的关键。您可以自定义角色的义体、技能和玩法，探索包罗万象的城市。您做出的选择也将会对剧情和周遭的世界产生影响。</p>
+					</div>
+					<!-- 购买按钮和折扣 -->
+					<div class="priceBox">
+						<!-- 购买按钮背景 -->
+						<div class="backgroundBox">
+							<!-- 售卖价格 -->
+							<div class="sellPrice">
+								<div class="newPrice">￥1??</div>
+								<div class="oldPrice">￥299</div>
+							</div>
+							<!-- 折扣 -->
+							<div class="discount">
+								<div class="preOrder">首发特价</div>
+							</div>
+							<!-- 按钮 -->
+							<button class="buyBtn">
+								<!-- <a href="https://grsource.we4game.com/packet/channel/SteamOnline_SBPK1_1091500.exe">立即下载</a> -->
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- 第二连 -->
+				<div id="scrollTwo">
+					<div class="screenTwo"></div>
+						<div class="yellowBack">
+							<p class="title">扮演亡命街头的雇佣兵</p>
+							<p class="text">化身装备机械强化义体的城市雇佣兵，成为一名赛博朋克，在夜之城的街头谱写属于您的传奇。</p>
+						</div>
+						<!-- 购买按钮和折扣 -->
+						<div class="priceBox">
+							<!-- 购买按钮背景 -->
+							<div class="backgroundBox">
+								<!-- 售卖价格 -->
+								<div class="sellPrice">
+									<div class="newPrice">￥1??</div>
+									<div class="oldPrice">￥299</div>
+								</div>
+								<!-- 折扣 -->
+								<div class="discount">
+									<div class="preOrder">首发特价</div>
+								</div>
+								<!-- 按钮 -->
+								<button class="buyBtn">
+									<!-- <a href="https://grsource.we4game.com/packet/channel/SteamOnline_SBPK1_1091500.exe">立即下载</a> -->
+								</button>
+							</div>
+						</div>
+					</div>
+				<!-- 第三连 -->
+				<div id="scrollThree">
+				<div class="screenThree"></div>
+				<div class="yellowBack">
+					<p class="title">盗走能够带来永生的植入体</p>
+					<p class="text">接下有生以来最危险的任务，追寻能够带来永生的原型植入体。</p>
+				</div>
+				<!-- 购买按钮和折扣 -->
+				<div class="priceBox">
+					<!-- 购买按钮背景 -->
+					<div class="backgroundBox">
+						<!-- 售卖价格 -->
+						<div class="sellPrice">
+							<div class="newPrice">￥1??</div>
+							<div class="oldPrice">￥299</div>
+						</div>
+						<!-- 折扣 -->
+						<div class="discount">
+							<div class="preOrder">首发特价</div>
+						</div>
+						<!-- 按钮 -->
+						<button class="buyBtn">
+							<!-- <a href="https://grsource.we4game.com/packet/channel/SteamOnline_SBPK1_1091500.exe">立即下载</a> -->
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 更多游戏截图 -->
+			<div id="gamePic">
+				<div class="btn">
+					<div class="leftBtn"></div>
+					<div class="rightBtn"></div>
+				</div>
+				<div class="title">
+					<div class="text">更多游戏截图</div>
+					<div class="yellowline"></div>
+				</div>
+				
+				<!-- 游戏图展示 -->
+				<div class="gameRotation">
+					<div class="gamePicBox">
+						<ul>
+							<li>
+								<img src="./images/video1.jpg" alt="">
+							</li>
+							<li style="width: 968px;height: 545px;display:block">
+								<img src="./images/video2.jpg" alt="">
+							</li>
+							<li>
+								<img src="./images/video3.jpg" alt="">
+							</li>
+							<li>
+								<img src="./images/video4.jpg" alt="">
+							</li>
+							<li>
+								<img src="./images/video5.jpg" alt="">
+							</li>
+							<li>
+								<img src="./images/video6.jpg" alt="">
+							</li>
+							<li>
+								<img src="./images/video7.jpg" alt="">
+							</li>
+							<li>
+								<img src="./images/video8.jpg" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<!-- 轮播点 -->
+				<div class="changePic">
+					<ul></ul>
+					<ul class="active"></ul>
+					<ul></ul>
+					<ul></ul>
+					<ul></ul>
+					<ul></ul>
+					<ul></ul>
+					<ul></ul>
+				</div>
+			</div>
+			
+			<!-- 底部关于 -->
+			<div id="about">
+				<!-- logo -->
+				<div class="logo"></div>
+				<!-- 介绍 -->
+				<div class="introduce">
+					<div class="aboutUs">
+						<ul>关于我们</ul>
+						<ul>公司简介</ul>
+						<ul>用户使用协议</ul>
+					</div>
+					<div class="statement">声明：本站只提供正版游戏代充值服务，不涉及游戏发行，推广及代理</div>
+					<div class="company">Copyright © 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南京云之捷互联科技有限公司｜苏ICP备20031855号-1｜ICP增值业务许可：苏B2-20200893</div>
+				</div>
+				<!-- 安全支付 -->
+				<div class="payment">
+					<p>安全支付</p>
+					<div class="wechat"></div>
+					<div class="alipay"></div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="css/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+
+
+		$(function(){
+			
+			getprice()
+			
+			
+			// 点击首页视频打开黑色遮罩层
+			$('#blackBtn').click(function(){
+				$('#blackBack').addClass('undernone')
+				$('#showVideo').addClass('undernone')
+				$('#blackBtn').addClass('undernone')
+			})
+			
+			
+			// 关闭支付成功页
+			$('#paysuccess .close').click(function(){
+				$('#paysuccess').addClass('undernone')
+			})
+			
+			
+			// 点击关闭订单界面
+			$('#payment .payhead .close').click(function(){
+				$('#payment').addClass('undernone')
+			})
+			
+			
+			// 点击立即预购打开订单
+			$('.priceBox .buyBtn').click(function(){
+				$('#payment').removeClass('undernone')
+				getprice()
+			})
+			
+			
+			// 首页视频切换
+			$('.changeVideo ul').click(function(){
+				$(this).addClass('active').siblings().removeClass('active')
+				console.log($(this).index())
+				$('#homepage .showGame .playVideo video').eq($(this).index()).removeClass('none').siblings().addClass('none')
+			})
+			
+			
+			// 视频点击切换
+			$('.moveBox .video').click(function(){
+				count = $(this).index()
+				$(this).find('.playMask').addClass('active')
+				$(this).siblings().find('.playMask').removeClass('active')
+				console.log($(this).index())
+				
+				$('#blackBtn').removeClass('undernone')
+				$('#container #showVideo').removeClass('undernone')
+				$('#container #blackBack').removeClass('undernone')
+				$('#showVideo video').eq($(this).index()).removeClass('undernone').siblings().addClass('undernone')
+			})
+			
+			
+			// 游戏视频切换
+			var leftBtn = $('#homepage .videoBanner .btnBox').find('.leftBtn')
+			var rightBtn = $('#homepage .videoBanner .btnBox').find('.rightBtn')
+			
+			leftBtn.click(function(){
+				leftBtn.addClass('active');
+				rightBtn.removeClass('active')
+				count -= 1;
+				if(count <= 0){
+					count = 0
+				}
+				if(count < 4){
+					$('.moveBox').css('transform',"translateX(0)")
+				}
+				// console.log(count)
+				$('.playMask').eq(count).addClass('active')
+				$('.playMask').eq(count + 1).removeClass('active')
+			})
+			
+			rightBtn.click(function(){
+				rightBtn.addClass('active');
+				leftBtn.removeClass('active')
+				count += 1;
+				if(count > 7){
+					count = 1;
+				}
+				if(count > 3 && count < 7){
+					$('.moveBox').css("transform","translateX("+(count-3)*375*-1+"px"+")")
+				}
+				if(count > 6){
+					$('.moveBox').css('transform',"translateX(0)")
+					$('.playMask').eq(0).addClass('active')
+				}
+				// console.log(count)
+				$('.playMask').eq(count).addClass('active')
+				$('.playMask').eq(count - 1).removeClass('active')
+			})
+			
+			
+			$('.btn .leftBtn').click(function(){
+				num -= 1
+				if(num < 1){
+					num = 8
+				}
+				$('.gamePicBox').css('transform',"translateX("+(num - 2)*945*-1+"px"+")")
+				$('.gamePicBox ul li').eq(num - 1).css('transform',"scale("+1.4+")")
+				$('.gamePicBox ul li').eq(num).css('transform',"scale("+1+")")
+				$('.changePic ul').eq(num - 1).addClass('active')
+				$('.changePic ul').eq(num).removeClass('active')
+				if(num >= 8){
+					$('.changePic ul').eq(0).removeClass('active')
+				}
+				console.log(num)
+			})
+			
+			
+			// 点击更多游戏截图左右按钮切换图片
+			$('.btn .rightBtn').click(function(){
+				num += 1
+				if(num > 8){
+					num = 1
+				}
+				$('.gamePicBox').css('transform',"translateX("+(num - 2)*945*-1+"px"+")")
+				$('.gamePicBox ul li').eq(num - 1).css('transform',"scale("+1.4+")")
+				$('.gamePicBox ul li').eq(num - 2).css('transform',"scale("+1+")")
+				$('.changePic ul').eq(num - 1).addClass('active')
+				$('.changePic ul').eq(num - 2).removeClass('active')
+				console.log(num)
+			})
+			
+			
+			// 点击获取验证码操作
+			$('.code').click(function(){
+				checkPhone()	
+			});
+			
+			
+			// 选中购买的游戏类型：默认 畅享 --
+			$('.discount .together').click(function(){
+				if(!isLogin()){return}
+				$('.together').removeClass('unactive').addClass('isactive')
+				$('.speacPrice').removeClass('isactive').addClass('unactive')
+				$('.info').removeClass('sperefund').addClass('togerefund')
+				creadOrder()
+			})
+			$('.discount .speacPrice').click(function(){
+				if(!isLogin()){return}
+				$('.speacPrice').removeClass('unactive').addClass('isactive')
+				$('.together').removeClass('isactive').addClass('unactive')
+				$('.info').removeClass('togerefund').addClass('sperefund')
+				creadOrder()
+			})
+			
+			
+		})
+		
+		
+		
+		// 手机号验证
+		function checkPhone(){
+			var phone = document.getElementById('phone').value;
+			// /^1[3456789]\d{9}$/
+			if(!(/^1[3456789]\d{9}$/.test(phone))){
+				alert('手机号有误，请重填');
+				return false
+			}else {
+				let count = 60;
+				const countDown = setInterval(() => {
+					if(count === 0){
+						$('.code').text('重新发送').removeAttr('disabled');
+						$('.code').css({
+							background:'#000000',
+							color:'#43b7f8'
+						});
+						clearInterval(countDown);
+					}else{
+						$('.code').attr('disabled',true);
+						$('.code').css({
+							background:'#000000',
+							opacity:0.59,
+							color:'#707070',
+						});
+						$('.code').text(count + '秒重新获取');
+					}
+					count--;
+				},1000);
+			}
+		}		
+		
+	
+		
+		var count = 0;//定时器时间
+		var num = 2;// 游戏截图移动数量
+		var OKF_TOKEN = '';// 保存token
+		var orderId = '';
+		var isCodes=false;// 验证码是否成功
+		
+		var indexStockData={};//保存库存数据
+		// 保存订单数据
+		var creadOrderDatas={
+			'appId':'1091500',
+			'productId':'770',
+			'OKF_TOKEN': OKF_TOKEN,
+			'payType':2,
+			'balanceType':0,
+			'channelId':'SBPK2',
+			"model":'2',
+		};
+		// 保存订单付款信息
+		var list = {
+			'orderId':'',
+		};
+		var orderTogetherData = '';//保存合玩数据
+		var qrCodeSrc = './images/phoneVer.png';//默认付款图片
+		var orderProductIdData = '';//保存独享数据
+		var orderchangeData = '';//变量保存合玩或者独享数据
+		var listdata = '';//保存付款订单数据
+		
+		$('.code').on('click',function(){
+			var phoneNumber = $('#phone').val()
+			if(phoneNumber == ''){return}
+			console.log(phoneNumber)
+			// 验证手机号
+			 $.ajax({
+				 type: "GET",
+				 url: "https://api.we4game.com/app/author/sendSmsCode",
+				 data: {'phoneNumber': phoneNumber},
+				 dataType: "json",
+				 success: function(data){
+							if(data.flag){
+							// 获取验证码成功
+							isCodes = true
+							
+							}else{
+								isCodes = false
+							}
+				  }
+			 });
+		})
+		// 登陆成功之后隐藏其他样式切换成已登陆状态
+		$('.actives').on('click',function(){
+			if(isCodes){
+				$('.actives').addClass('undernone')
+				$('.password').addClass('undernone')
+				$('.code').attr('style','display:none')
+				$('.finish').removeClass('undernone')
+				
+				
+				$('.account').attr('disabled',true);
+				$('.account').css({
+					background:'#000000',
+					color:'#707070',
+				});
+
+				
+				$('.save').text('本单立省￥100')
+				//使用验证码登陆
+				$.ajax({
+					 type: "GET",
+					 url: "https://api.we4game.com/app/author/loginDomestic",
+					 data: {
+						'phoneNumber':$('.account').val(),
+						'channelAbbr':'SBPK2',
+						'smsCode': $('.password').val(),
+					},
+					 dataType: "json",
+					 success: function(data){
+						console.log(data)
+						//获取到token 重新创建订单
+						OKF_TOKEN  = data.code //保存token
+						creadOrderDatas.OKF_TOKEN = data.code //保存订单token
+						
+						creadOrder()
+					  }
+				});
+			}else {
+				alert('验证码错误')
+			}
+			
+		})
+		// 游戏详情数据
+		function getprice(){
+			$.ajax({
+				type: "GET",
+				url: "https://api.we4game.com/app/game/findSaleData",
+				data: {'appId':'1091500'},
+				dataType: "json",
+				success: function(dataOrder){
+					console.log(dataOrder)
+					// 页面合玩价格
+					$('.priceBox .newPrice').text('￥' + dataOrder.data.together.price)
+					//未登录的畅享版价格
+					$('.together .nowprice').text('￥' + dataOrder.data.together.price)
+					//未登录的独享版价格
+					// $('.speacPrice .nowprice').text('￥' + dataOrder.data.account.price)
+					// 默认右边价格
+					$('.rightBox .priceBox .price span').text(dataOrder.data.together.price)
+					$('.rightBox .priceBox .countprice span').text(dataOrder.data.together.discount)
+				}
+			})
+		}
+		
+	
+		//创建订单
+		function creadOrder(){
+			if(OKF_TOKEN == ''){
+				alert('请先登录')
+				return 
+			}
+			// 创建订单 https://source.sgsugou.com/app/order/create
+			// 参数                含义      类型      必填    参考值    
+			// appId              steamID   LONG      是     578080
+			// productId          游戏产品ID  LONG      是     3
+			// OKF_TOKEN          用户识别ID  String    是     dcb94b7a49fb42798bbbd44445c8356f
+			// payType            支付方式    INT       是     支付方式 1 余额支付 2 微信支付 3 支付宝支付(默认) 4 券票支付
+			// balanceType        是否使用余额 INT       是     0 否(默认)  1 是
+			// channelId          渠道ID      String     否     BOT1
+			// ticketId           票券ID      Long      否     6
+			//通过appid获取productId用于创建订单
+			$.ajax({
+				 type: "GET",
+				 url: "https://api.we4game.com/app/game/findSaleData",
+				 data: {'appId':'1091500'},
+				 dataType: "json",
+				 success: function(dataOrder){
+					 //保存获取到的数据
+					 console.log(dataOrder)
+					 
+					 // 保存独享数据
+					orderProductIdData = dataOrder.data.account
+					// 保存合玩数据
+					orderTogetherData = dataOrder.data.together
+					if($('.together').hasClass('isactive')){
+						// 变量保存畅享数据
+						orderchangeData = orderTogetherData
+					}else if($('.speacPrice').hasClass('isactive')){
+						// 变量保存独享数据
+						orderchangeData = orderProductIdData
+					}
+					
+					//创建订单之前 配置创建订单的参数信息
+					creadOrderDatas.model = orderchangeData.model
+					creadOrderDatas.productId = orderchangeData.productId
+					// creadOrderDatas.channelId = orderchangeData.channelId
+					
+					
+					
+					//查看库存参数赋值 
+					indexStockData.OKF_TOKEN = OKF_TOKEN
+					indexStockData.appId = '1091500'
+					indexStockData.productId = orderProductIdData.productId
+					$.ajax({
+						 type: "GET",
+						 url: "https://api.we4game.com/app/order/stock",
+						 data: indexStockData,
+						 dataType: "json",
+						 success: function(type){
+							console.log(type.flag)
+							if(type.flag){
+								$.ajax({
+									 type: "GET",
+									 url: "https://api.we4game.com/app/order/create",
+									 data: creadOrderDatas,
+									 dataType: "json",
+									 success: function(data){
+										console.log(data)
+										//获取到token 重新创建订单 获取orderid
+										//orderId =  = data.xxxxxxx
+										// 保存订单orderId
+										list.orderId = data.data.orderId
+										// 保存订单付款信息
+										listdata = data.data
+										list.OKF_TOKEN = OKF_TOKEN
+										// {
+										//   "message":"创建订单成功",//flag = false 错误提示消息 如 该游戏库存不足，请稍后再试!
+										//   "code":"out_of_stock", //只在库存不足时有
+										//   "data":{
+										//     "worth": 98.00,//价值
+										//     "discount": 97.91,//立减
+										//     "orderId":1,//订单ID
+										//     "loseTime":300,//订单超时时间
+										//     "enough":0,//不可以使用余额 1 可以使用但不足 2 可以使用且足够 在勾选余额时需要payType=1
+										//     "balance":999999.99,//余额
+										//     "unpay":0.01,//待支付 //enough=true 无待支付
+										//     "qrcode":"https://source.onekeyfun.com/qrcode/33/a2751824bcce497b854a94efc868bcb5.png" //enough=true 无二维码
+										//   }
+										//   "flag": true
+										// }
+										//1。保存orderId
+										//2.qecode图片切换
+										
+										$('.codePic img').attr('src',listdata.qrcode)
+										$('.rightBox .priceBox .price span').text(orderchangeData.price)
+										$('.rightBox .priceBox .countprice span').text(orderchangeData.discount)
+										
+										
+										//3.修改价格 $(el).text()   $(el).html()
+										//4.调用订单状态查询
+										
+										// 启动付款定时器
+										setTimer()
+									  }
+								});
+							}else {
+								// 如果为false，说明该用户已经购买该游戏
+								$('#payment').addClass('undernone')
+								$('#replace').removeClass('undernone')
+							}
+						}
+					});
+				  }
+			});
+				
+		}
+
+		//查询订单状态
+		// function queryOrderState(){
+			// 查询订单状态 https://source.sgsugou.com/app/order/query
+			// 参数                含义      类型      必填    参考值    
+			// OKF_TOKEN          用户识别ID  String    是     4fb7602f1dbd445a862b7390ccfbd6d0
+			// orderId            订单ID     LONG      是     495
+			// 返回值展示数据
+			// {
+			//     "code": "CANCEL",//CANCEL=订单失效 NOTPAY=未支付(隔10秒继续请求) SUCCESS=支付成功
+			//     "flag": false,//未支付 true 支付成功
+			//     "message": "订单失效" //flag=true 支付成功
+			// }						
+		// }
+		//每隔1秒查询一次订单状态
+		var timer = '';
+		function setTimer(){
+			 timer = setInterval(function(){
+				 $.ajax({
+				 	 type: "GET",
+				 	 url: "https://api.we4game.com/app/order/query",
+				 	 data: list,
+				 	 dataType: "json",
+				 	 success: function(data){
+				 		console.log(data)
+				 		//查询订单状态
+				 		if(data.flag){
+							console.log('定时器销毁')
+				 			//'打开支付成功窗口 并销毁定时器'
+				 			$('#payment').addClass('undernone')
+				 			 $('#paysuccess').removeClass('undernone')
+				 		clearInterval(timer);
+				 		timer = null}
+				 	}
+				 });
+			 },1000)
+			 
+		}
+		
+		// 支付订单选中付款方式
+		// 选中支付宝
+		$('.payway .alipay').click(function(){
+			if(!isLogin()){return}
+			$('.alipay').addClass('aliSelect').removeClass('aliuncheck')
+			$('.wechat').addClass('weuncheck').removeClass('weSelect')
+			creadOrderDatas.payType = 3
+			creadOrder()
+		})
+		
+		// 选中微信
+		$('.payway .wechat').click(function(){
+			// console.log(isLogin())
+			if(!isLogin()){return}
+			$('.alipay').addClass('aliuncheck').removeClass('aliSelect')
+			$('.wechat').addClass('weSelect').removeClass('weuncheck')
+			creadOrderDatas.payType = 2
+			creadOrder()
+		})
+		
+		// 检查是否登录
+		function isLogin(){
+			if(OKF_TOKEN == ''){
+				alert("请先登录")
+			}
+			if(timer != null){
+				closeOrder()
+			}
+			return !(OKF_TOKEN == '')	
+		}
+		
+		// 关闭之前的订单定时器
+		function closeOrder(){
+			clearInterval(timer);
+			timer = null
+		}
+	</script>
+</html>

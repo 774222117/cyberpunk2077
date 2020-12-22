@@ -1,0 +1,359 @@
+body {overflow-x: hidden;}
+						
+.active {background-color: rgba(5,215,242,1);}
+			
+#container{width:100%;margin: 0 auto;background-color: rgba(0,0,0,1);position: relative;}
+
+/* 重复购买跳转按钮 */
+#replace {width: 540px;height: 360px;background: rgba(16,22,32,1);position: fixed;z-index: 99;top: 30%;left: 40%;}
+#replace .replaceGame {width: 216px;height: 32px;position: absolute;margin: 108px 0 0 163px;font-size: 24px;color: #FFFFFF;
+line-height: 32px;}
+#replace .updown {width: 214px;height: 48px;background: linear-gradient(136deg, #34ABDC 0%, #367CCE 100%);border-radius: 4px;
+margin: 225px 0 0 163px;outline: none;border: none;}
+#replace .updown a {font-size: 14px;font-weight: bold;color: #FFFFFF;line-height: 20px;}
+
+
+/* 打开视频全屏背景层 */
+#blackBack {width: 100%;height: 100%;background: #000000;opacity: 0.6;position: absolute;z-index: 96;}
+#blackBtn {width: 60px;height: 60px;position: fixed;z-index: 97;background: url(../images/blackBtn.png)no-repeat;
+top: 4%;right: 2%;cursor: pointer;}
+
+
+/* 支付成功界面 */
+#paysuccess {width: 716px;height: 477px;background: rgba(16,22,32,1);position: fixed;z-index: 99;top: 30%;left: 32%;}
+#paysuccess .textBox {position:absolute}
+#paysuccess .textBox .success {width: 157px;height: 48px;margin: 130px 0 0 275px;display: flex;justify-content: space-between;}
+#paysuccess .success .pic {width: 48px;height: 48px;background: url(../images/success.png)no-repeat;}
+#paysuccess .success .paytext {width: 96px;height: 31px;font-size: 24px;font-weight: bold;color: #FFFFFF;line-height: 48px;}
+
+#paysuccess .text {width: 270px;height: 24px;margin: 228px 0 0 230px;font-size: 18px;font-weight: bold;color: #BFE9FF;
+line-height: 24px;position: absolute;}
+#paysuccess .updown {width: 312px;height: 44px;background: linear-gradient(136deg, #34ABDC 0%, #367CCE 100%);border-radius: 4px;
+margin: 363px 0 0 212px;position: absolute;border: none;outline: none;font-weight: bold;cursor: pointer;}
+#paysuccess .updown a {color: #FFFFFF;font-size: 18px;line-height: 48px;}
+#paysuccess .close {width: 30px;height: 30px;position: absolute;top: 0;right: 0;background: url(../images/close.png)no-repeat;cursor: pointer;
+margin: 8px 8px 0 0;}
+
+/* 视频框 */
+#showVideo video {width: 790px;height: 446px;z-index: 98;position: fixed;left: 34%;top: 14%;}
+.undernone {display: none;}
+
+/* 支付中心页 */
+#payment {width: 760px;height: 495px;position: fixed;z-index: 99;background-color: #101620;left: 32%;top: 25%;}
+#payment .payhead {width: 760px;height: 27px;display: flex;justify-content: flex-end;}
+/* 关闭按钮 */
+#payment .payhead .close{width: 30px;height: 30px;background: url(../images/close.png)no-repeat;cursor: pointer;}
+#payment .paybody {width: 760px;height: 441px;display: flex;}
+
+/* 支付左边部分 */
+#payment .paybody .left {width: 380px;height: 441px;}
+#payment .paybody .leftBox {width: 355px;height: 363px;border-right: 1px rgba(151,151,151,0.15) dashed;margin-left: 26px;}
+#payment .paybody .left .gameName {width: 301px;height: 30px;margin-top: 16px;border-bottom: 1px solid rgba(151,151,151,0.15);}
+/* 游戏信息 */
+#payment .paybody .left .gameName .name {width: 301px;height: 19px;display: flex;justify-content: space-between;}
+#payment .paybody .left .gameName .name span:nth-child(1){font-size: 14px;color: #979797;line-height: 19px;}
+#payment .paybody .left .gameName .name span:nth-child(2){font-size: 14px;color: #FFFFFF;line-height: 19px;}
+#payment .paybody .left .gameName .buyclass {width: 301px;height: 19px;display: flex;justify-content: space-between;margin-top: 16px;}
+#payment .paybody .left .gameName .buyclass span:nth-child(1){font-size: 14px;color: #979797;line-height: 19px;}
+#payment .paybody .left .gameName .buyclass span:nth-child(2){font-size: 14px;color: #FFFFFF;line-height: 19px;}
+/* 选择优惠 */
+#payment .paybody .left .discount {width: 291px;height: 170px;margin-top: 13px;border-bottom: 1px solid rgba(151,151,151,0.15);}
+#payment .paybody .left .discount .change {width: 86px;height: 19px;font-size: 14px;color: #979797;line-height: 19px;}
+/* #payment .paybody .left .discount .speacPrice span:nth-child(1){font-size: 14px;width: 142px;height: 35px;text-align: center;line-height: 35px;border-right: 1px rgba(151,151,151,0.15) dashed;margin-top: 5px;}
+#payment .paybody .left .discount .speacPrice span:nth-child(2){font-size: 14px;width: 148px;height: 45px;text-align: center;line-height: 45px;} */
+
+/* 畅享版 */
+#payment .paybody .left .discount .together {width: 291px;height: 45px;margin-top: 17px;color: #FFFFFF;display: flex;justify-content: space-between;cursor: pointer;}
+#payment .paybody .left .discount .together .infogame {width: 82px;height: 21px;display: flex;margin: 11px 0 0 21px;}
+#payment .paybody .left .discount .together .infogame .accountPic {width: 30px;height: 21px;background: url(../images/together.png)no-repeat;}
+#payment .paybody .left .discount .together .infogame .edition {width: 55px;height: 19px;font-size: 14px;font-weight: bold;font-family: "microsoft yahei";color: rgba(124,217,255,1);line-height: 19px;}
+#payment .paybody .left .discount .together .priceBox {width: 78px;height: 21px;display: flex;margin: 11px 34px 0 0;}
+#payment .paybody .left .discount .together .priceBox .oldprice {width: 31px;height: 19px;font-size: 14px;font-family: "microsoft yahei";
+color: rgba(73,192,255,1);line-height: 24px;text-decoration: line-through;}
+#payment .paybody .left .discount .together .priceBox .nowprice {width: 37px;height: 21px;margin-left: 12px;font-size: 16px;font-weight: bold;
+line-height: 21px;color: rgba(73,192,255,1);font-family: "microsoft yahei";}
+#payment .paybody .left .discount .together .priceBox .nowprice span {font-size: 16px;font-weight: bold;line-height: 21px;color: rgba(73,192,255,1);}
+.isactive {background: url(../images/bigBlueLine.png)no-repeat;}
+.unactive {background: url(../images/smallblueLine.png)no-repeat;}
+/* 独享版 */
+#payment .paybody .left .discount .speacPrice {width: 291px;height: 45px;margin-top: 17px;color: #FFFFFF;display: flex;justify-content: space-between;cursor: pointer;}
+#payment .paybody .left .discount .speacPrice .infogame {width: 82px;height: 21px;display: flex;margin: 11px 0 0 21px;}
+#payment .paybody .left .discount .speacPrice .infogame .accountPic {width: 16px;height: 21px;background: url(../images/account.png)no-repeat;}
+#payment .paybody .left .discount .speacPrice .infogame .edition {width: 55px;height: 19px;margin-left: 14px;font-size: 14px;font-weight: bold;
+font-family: "microsoft yahei";color: rgba(124,217,255,1);line-height: 19px;}
+#payment .paybody .left .discount .speacPrice .priceBox {width: 78px;height: 21px;display: flex;margin: 11px 34px 0 0;}
+#payment .paybody .left .discount .speacPrice .priceBox .oldprice {width: 31px;height: 19px;font-size: 14px;font-family: "microsoft yahei";
+color: rgba(73,192,255,1);line-height: 24px;text-decoration: line-through;}
+#payment .paybody .left .discount .speacPrice .priceBox .nowprice {width: 37px;height: 21px;margin-left: 12px;font-size: 16px;font-weight: bold;
+line-height: 21px;color: rgba(73,192,255,1);font-family: "microsoft yahei";}
+#payment .paybody .left .discount .speacPrice .priceBox .nowprice span {font-size: 16px;font-weight: bold;line-height: 21px;color: rgba(73,192,255,1);}
+
+/* 获取手机号验证码 */
+#payment .paybody .left .phone {width: 299px;height: 114px;margin-top: 13px;border-bottom: 1px rgba(151,151,151,0.15) solid;}
+#payment .paybody .left .phone span{font-size: 14px;color: #FFFFFF;line-height: 19px;}
+#payment .paybody .left .phone .inputPhone{width: 299px;height: 34px;margin-top: 6px;display: flex;}
+#payment .paybody .left .phone .inputPhone .account {width: 293px;height: 34px;background: #000000;outline: none;border: 0;opacity: 0.59;color: #FFFFFF;padding-left: 10px;}
+#payment .paybody .left .phone .inputPhone .code {background: #000000;color: #FFFFFF;outline: none;border: 0;opacity: 0.59;color: rgba(67,183,248,1);text-align: center;
+position: absolute;left: 229px;display: inline;margin-left: 14px;margin-top: 9px;cursor: pointer;}
+#payment .paybody .left .phone .inputPhone .finish {width: 100px;height: 34px;background: url(../images/successlogin.png)no-repeat;}
+#payment .paybody .left .phone .getNum {width: 100%;height: 100%;display: flex;}
+#payment .paybody .left .phone .readyPhone{width: 194px;height: 34px;margin-top: 8px;}
+#payment .paybody .left .phone .readyPhone .password {width: 194px;height: 34px;background: #000000;color: #FFFFFF;outline: none;border: 0;opacity: 0.59;padding-left: 10px;}
+#payment .paybody .left .phone .btn{width: 90px;height: 34px;margin: 8px 0 0 14px;font-size: 12px;color: #FFFFFF;line-height: 34px;text-align: center;cursor: pointer;}
+#payment .paybody .left .phone .login{background: url(../images/login.png)no-repeat;}
+#payment .paybody .left .phone .blue{background: url(../images/blueBtn.png)no-repeat;}
+#payment .paybody .left .info {width: 308px;height: 27px;margin-top: 14px;}
+.togerefund {background: url(../images/infotwo.png)no-repeat;}
+.sperefund {background: url(../images/info.png)no-repeat;}
+
+
+/* 支付右边 */
+#payment .paybody .right {width: 380px;height: 441px;}
+#payment .paybody .right .rightBox{width: 299px;height: 332px;margin: 20px 0 0 47px;}
+#payment .paybody .right span {width: 108px;height: 23px;font-size: 18px;font-weight: bold;color: #979797;line-height: 24px;}
+/* 支付方式 */
+#payment .payway {width: 302px;height: 42px;margin-top: 20px;display: flex;}
+/* 微信 */
+#payment .payway .wechat {width: 148px;height: 42px;cursor: pointer;}
+#payment .payway .weuncheck {background: url(../images/wechat2.png)no-repeat;}
+#payment .payway .weSelect{background: url(../images/wechatselect.png)no-repeat;}
+/* 支付宝 */
+#payment .payway .alipay {width: 148px;height: 42px;margin-left: 6px;cursor: pointer;}
+#payment .payway .aliSelect{background: url(../images/alipayselect.png)no-repeat;}
+#payment .payway .aliuncheck {background: url(../images/alipay2.png)no-repeat;}
+/* 二维码 */
+#payment .qrcode {width: 299px;height: 223px;margin-top: 24px;display: flex;background: rgba(34,47,69,1);}
+#payment .qrcode .codePic {width: 123px;height: 124px;margin: 51px 0 0 28px;}
+#payment .qrcode .codePic img{width: 123px;height: 124px;}
+#payment .qrcode .priceBox {width: 101px;height: 124px;margin: 51px 0 0 29px;}
+/* 支付信息 */
+#payment .qrcode .priceBox .waitfor {width: 56px;height: 19px;font-size: 14px;color: #979797;line-height: 19px;}
+#payment .qrcode .priceBox .waitfor span {font-size: 14px;color: #979797;line-height: 19px;}
+#payment .qrcode .priceBox .price {width: 45px;height: 31px;font-size: 24px;font-weight: bold;color: #3DB4FF;line-height: 32px;text-shadow: 0px 2px 4px rgba(0,0,0,0.29);margin-top: 11px;margin-left: -4px;}
+#payment .qrcode .priceBox .price span {font-size: 24px;font-weight: bold;color: #3DB4FF;line-height: 32px;}
+#payment .qrcode .priceBox .countprice {width: 82px;height: 18px;font-size: 12px;font-weight: bold;color: #43B7F8;line-height: 16px;}
+#payment .qrcode .priceBox .countprice span {font-size: 12px;font-weight: bold;color: #43B7F8;line-height: 12px;}
+#payment .qrcode .priceBox .userservice {width: 101px;height: 18px;font-size: 12px;color: #979797;line-height: 16px;margin-top: 30px;margin-left: -5px;}
+#payment .payfoot {width: 760px;height: 27px;}
+
+
+/* 第一页 */
+#homepage {width: 100%;height: 100%;position: relative;z-index: 1;margin: 0 auto;}
+#homepage .showGame{width: 100%;height: 997px;background: url(../images/homepage.png) no-repeat center 0;background-size: 100%;}
+/* 视频框 */
+@media screen and (max-width:1600px) {
+	#homepage .showGame {height:780px}
+}
+#homepage .showGame .playVideo {width: 693px;height: 416px;background:url(../images/videoBox.png)no-repeat center 0;position: absolute;left: 1056px;top: 125px;z-index: -99;
+background-size: 100%;border: 1px black solid;}
+@media screen and (max-width:1600px) {
+	#homepage .showGame .playVideo {left: 800px;top: 90px;}
+}
+#homepage .showGame .playVideo video:nth-child(1){width: 100%;height: 100%;}
+#homepage .showGame .playVideo video:nth-child(2){width: 100%;height: 100%;}
+#homepage .showGame .playVideo video:nth-child(3){width: 100%;height: 100%;}
+#homepage .showGame .playVideo video:nth-child(4){width: 100%;height: 100%;}
+#homepage .showGame .playVideo .play {display: block;}
+#homepage .showGame .playVideo .none {display: none;}
+#homepage .showGame .playVideo img{position: absolute;left: 178px;top: 8px;cursor: pointer;}
+
+/* 视频切换按钮 */
+#homepage .changeVideo {width: 100px;height: 14px;display: flex;justify-content: space-between;position: relative;left: 1642px;top: 507px;}
+@media screen and (max-width:1600px) {
+	#homepage .changeVideo {left: 1350px;top: 420px;}
+}
+#homepage .changeVideo ul{width: 17px;height: 14px;background-color: rgba(149,147,120,1);cursor: pointer;}
+
+/* 被选中的样式 */
+#homepage .changeVideo .active {background-color: rgba(5,215,242,1);}
+
+/* 发售日期 */
+#homepage .sellDate {width: 361px;height: 50px;position: absolute;left: 1237px;top: 582px;}
+#homepage .sellDate p {width: 394px;height: 43px;font-size: 28px;font-family: "microsoft yahei";font-weight: bold;color: #001012;line-height: 32px;text-align: center;}
+@media screen and (max-width:1600px) {
+	#homepage .sellDate {left: 950px;top: 520px;}
+}
+/* 购买按钮盒子 */
+#homepage .priceBox {width: 710px;height: 109px;position: absolute;left: 1062px;top: 721px;display: flex;}
+#homepage .backgroundBox {width: 525px;height: 87px;background: url(../images/blueline.png)no-repeat;}
+#homepage .discount {width: 214px;height: 87px;background: url(../images/discount.png)no-repeat;position: absolute;}
+#homepage .discount .preOrder {width: 138px;height: 32px;font-size: 30px;font-family: "microsoft yahei";color: #FFFFFF;line-height: 32px;text-align: center;margin: 26px 0 0 30px;}
+#homepage .buyBtn {width: 317px;height: 109px;background: url(../images/buyBtn1.png)no-repeat;position: absolute;left: 394px;cursor: pointer;margin-top: -20px;
+border: none;outline: none;}
+#homepage .buyBtn a {font-size: 40px;color: #FFFFFF;display: block;margin-bottom: 2px;line-height: 60px;}
+#homepage .sellPrice {width: 160px;height: 43px;position: absolute;margin-left: 216px;display: flex;margin-top: 22px;}
+#homepage .newPrice {width: 85px;height: 43px;font-size: 30px;font-weight: bold;color: #05D7F2;line-height: 43px;margin-right: 6px;}
+#homepage .oldPrice {width: 77px;height: 36px;font-size: 28px;font-weight: bold;color: #D8D8D8;line-height: 43px;text-decoration: line-through;}
+@media screen and (max-width:1600px) {
+	#homepage .priceBox {left: 850px;top: 640px;}
+}
+/* 联系客户 */
+#homepage .customerService {width: 106px;height: 105px;background: url(../images/customerService.png)no-repeat;position: fixed;right: 2%;bottom: 2%;z-index: 99;}
+
+/* 视频轮播 */
+#homepage .videoBanner{width: 100%;height: 325px;background: url(../images/yellowline.png)no-repeat center 0;background-size:100%;margin-top: 77px;position: relative;}
+
+/* logo */
+#homepage .videoBanner .logo {width: 256px;height: 192px;background: url(../images/logo.png)no-repeat center 0;position: absolute;left: 68px;top:44px;
+background-size: 100%;}
+/* 视频展示区 */
+#homepage .videoBanner .showVideoBox {width: 1482px;height: 202px;position: absolute;left: 380px;top: 46px;overflow: hidden;}
+
+#homepage .videoBanner .showVideoBox .moveBox {width: 1482px;height: 202px;display: flex;transition: all 0.5s linear;}
+/* 单个视频框 */
+#homepage .videoBanner .showVideoBox .moveBox .video {width: 358px;height: 202px;margin-right: 17px;}
+/* 图片层 */
+#homepage .videoBanner .showVideoBox .backPic {width: 358px;height: 202px;}
+#homepage .videoBanner .showVideoBox .backPic img {width: 100%;height: 100%;cursor: pointer;}
+#homepage .videoBanner .showVideoBox .playMask {width: 358px;height: 202px;position: absolute;z-index: 2;}
+
+/* 鼠标点击的视频框样式 */
+#homepage .videoBanner .showVideoBox .active {background: url(../images/BlueBorder.png)center center;}
+
+/* 左右按钮 */
+#homepage .videoBanner .btnBox {width: 182px;height: 34px;position: absolute;left: 1662px;top:260px;display: flex;}
+#homepage .videoBanner .btnBox .leftBtn {width: 81px;height: 34px;background-color: rgba(149,147,120,1);margin-right: 20px;}
+#homepage .videoBanner .btnBox .leftBtn img {width: 31px;height: 22px;text-align: center;margin: 6px 0 0 21px;}
+#homepage .videoBanner .btnBox .rightBtn {width: 81px;height: 34px;background-color: rgba(149,147,120,1);}
+#homepage .videoBanner .btnBox .rightBtn img {width: 31px;height: 22px;margin: 6px 0 0 25px;}
+#homepage .videoBanner .btnBox .active {background-color: rgba(1,215,242,1);}
+#container #scroll {width: 100%;height: 100%;transition: all 2s linear;}
+
+
+/* 滚动页第一张 */
+#scrollOne {width: 100%;height: 1166px;background:url(../images/backPic.png)no-repeat;margin: -56px auto 0 auto;position: relative;}
+#scrollOne .screenOne {width: 1788px;height: 921px;background: url(../images/screenOne.png)no-repeat center 0;position: absolute;left: 132px;top: 94px;background-size: 100%;}
+@media screen and (max-width:1600px) {
+	#scrollOne .screenOne {left: 10px;top: 30px;}
+}
+#scrollOne .yellowBack {width: 685px;height: 354px;background: url(../images/yellowBack.png)no-repeat;position: absolute;left: 1169px;top: 346px;}
+@media screen and (max-width:1600px) {
+	#scrollOne .yellowBack {left: 850px;top: 300px;}
+}
+#scrollOne .yellowBack .title {width: 396px;height: 58px;margin: 38px 0 0 241px;font-size: 44px;font-family: "microsoft yahei";color: #001012;line-height: 58px;font-weight: bold;}
+#scrollOne .yellowBack .text {width: 593px;height: 188px;margin: 15px 0 0 46px;font-size: 20px;font-family: "microsoft yahei";font-weight: bold;color: #001012;line-height: 27px;}
+
+/* 购买按钮 */
+#scrollOne .priceBox {width: 710px;height: 109px;position: absolute;left: 1169px;top: 699px;}
+#scrollOne .backgroundBox {width: 525px;height: 87px;background: url(../images/blueline.png)no-repeat;}
+#scrollOne .discount {width: 214px;height: 87px;background: url(../images/discount.png)no-repeat;position: absolute;}
+#scrollOne .discount .preOrder {width: 138px;height: 32px;font-size: 30px;font-family: "microsoft yahei";color: #FFFFFF;line-height: 32px;text-align: center;margin: 26px 0 0 30px;}
+#scrollOne .buyBtn {width: 317px;height: 109px;background: url(../images/buyBtn1.png)no-repeat;position: absolute;left: 394px;margin-top: -20px;
+border: none;outline: none;}
+#scrollOne .buyBtn a {font-size: 40px;color: #FFFFFF;display: block;margin-bottom: 2px;line-height: 60px;}
+#scrollOne .sellPrice {width: 160px;height: 43px;position: absolute;margin-left: 216px;display: flex;margin-top: 22px;}
+#scrollOne .newPrice {width: 85px;height: 43px;font-size: 30px;font-weight: bold;color: #05D7F2;line-height: 43px;margin-right: 6px;}
+#scrollOne .oldPrice {width: 77px;height: 36px;font-size: 28px;font-weight: bold;color: #D8D8D8;line-height: 43px;text-decoration: line-through;}
+@media screen and (max-width:1600px) {
+	#scrollOne .priceBox {left: 850px;top: 640px;}
+}
+/* 滚动页第二张 */
+#scrollTwo {width: 100%;height: 1000px;background: url(../images/backPicTwo.png)no-repeat center 0;position: relative;margin: 0 auto;background-size: 100%;}
+#scrollTwo .screenTwo {width: 1731px;height: 899px;background: url(../images/screenTwo.png)no-repeat;position: absolute;left: 187px;top: 43px;}
+@media screen and (max-width:1600px) {
+	#scrollTwo .screenTwo {left: 20px;top: 30px;}
+}
+#scrollTwo .yellowBack {width: 684px;height: 232px;background: url(../images/yellowBackTwo.png)no-repeat;position: absolute;left: 1169px;top: 339px;}
+@media screen and (max-width:1600px) {
+	#scrollTwo .yellowBack {left: 850px;top: 300px;}
+}
+#scrollTwo .yellowBack .title {width: 440px;height: 58px;margin: 36px 0 0 198px;font-size: 44px;font-family: "microsoft yahei";color: #001012;line-height: 58px;font-weight: bold;}
+#scrollTwo .yellowBack .text {width: 593px;height: 88px;margin: 15px 0 0 52px;font-size: 20px;font-family: "microsoft yahei";font-weight: bold;color: #001012;line-height: 27px;}
+
+/* 购买按钮 */
+#scrollTwo .priceBox {width: 710px;height: 109px;position: absolute;left: 1169px;top: 568px;}
+@media screen and (max-width:1600px) {
+	#scrollTwo .priceBox {left: 850px;top: 530px;}
+}
+#scrollTwo .backgroundBox {width: 525px;height: 87px;background: url(../images/blueline.png)no-repeat;}
+#scrollTwo .discount {width: 214px;height: 87px;background: url(../images/discount.png)no-repeat;position: absolute;}
+#scrollTwo .discount .preOrder {width: 138px;height: 32px;font-size: 30px;font-family: "microsoft yahei";color: #FFFFFF;line-height: 32px;text-align: center;margin: 26px 0 0 30px;}
+#scrollTwo .buyBtn {width: 317px;height: 109px;background: url(../images/buyBtn1.png)no-repeat;position: absolute;left: 394px;margin-top: -20px;
+border: none;outline: none;}
+#scrollTwo .buyBtn a {font-size: 40px;color: #FFFFFF;display: block;margin-bottom: 2px;line-height: 60px;}
+#scrollTwo .sellPrice {width: 160px;height: 43px;position: absolute;margin-left: 216px;display: flex;margin-top: 22px;}
+#scrollTwo .newPrice {width: 85px;height: 43px;font-size: 30px;font-weight: bold;color: #05D7F2;line-height: 43px;margin-right: 6px;}
+#scrollTwo .oldPrice {width: 77px;height: 36px;font-size: 28px;font-weight: bold;color: #D8D8D8;line-height: 43px;text-decoration: line-through;}
+
+
+/* 滚动页第三张 */
+#scrollThree {width: 1920px;height: 1000px;background: url(../images/backPicTwo.png)no-repeat;position: relative;margin: 0 auto;}
+#scrollThree .screenThree {width: 1726px;height: 898px;background: url(../images/screenThree.png)no-repeat center 0;position: absolute;left: 193px;top: 25px;background-image: 100%;}
+@media screen and (max-width:1600px) {
+	#scrollThree .screenThree {left: 30px;top: 30px;}
+}
+#scrollThree .yellowBack {width: 684px;height: 232px;position: absolute;background: url(../images/yellowBackThree.png)no-repeat;position: absolute;left: 1169px;top: 339px;}
+@media screen and (max-width:1600px) {
+	#scrollThree .yellowBack {left: 850px;top: 300px;}
+}
+#scrollThree .yellowBack .title {width: 528px;height: 58px;margin: 36px 0 0 110px;font-size: 44px;font-family: "microsoft yahei";font-weight: bold;color: #001012;line-height: 58px;}
+#scrollThree .yellowBack .text {width: 560px;height: 27px;margin: 15px 0 0 76px;font-size: 20px;font-family: "microsoft yahei";font-weight: bold;color: #001012;line-height: 27px;}
+
+
+/* 购买按钮 */
+#scrollThree .priceBox {width: 710px;height: 109px;position: absolute;left: 1169px;top: 568px;}
+@media screen and (max-width:1600px) {
+	#scrollThree .priceBox {left: 850px;top: 530px;}
+}
+#scrollThree .backgroundBox {width: 525px;height: 87px;background: url(../images/blueline.png)no-repeat;}
+#scrollThree .discount {width: 214px;height: 87px;background: url(../images/discount.png)no-repeat;position: absolute;}
+#scrollThree .discount .preOrder {width: 138px;height: 32px;font-size: 30px;font-family: "microsoft yahei";color: #FFFFFF;line-height: 32px;text-align: center;margin: 26px 0 0 30px;}
+#scrollThree .buyBtn {width: 317px;height: 109px;background: url(../images/buyBtn1.png)no-repeat;position: absolute;left: 394px;margin-top: -15px;
+border: none;outline: none;}
+#scrollThree .buyBtn a {font-size: 40px;color: #FFFFFF;display: block;margin-bottom: 2px;line-height: 60px;}
+#scrollThree .sellPrice {width: 160px;height: 43px;position: absolute;margin-left: 216px;display: flex;margin-top: 22px;}
+#scrollThree .newPrice {width: 85px;height: 43px;font-size: 30px;font-weight: bold;color: #05D7F2;line-height: 43px;margin-right: 6px;}
+#scrollThree .oldPrice {width: 77px;height: 36px;font-size: 28px;font-weight: bold;color: #D8D8D8;line-height: 43px;text-decoration: line-through;}
+
+/* 更多游戏截图 */
+#gamePic {width: 1912px;height: 1000px;background: url(../images/backPicTwo.png)no-repeat;position: relative;margin: 0 auto;}
+#gamePic .title {width: 290px;height: 55px;position: absolute;margin: 90px 0 0 73px;}
+#gamePic .title .text {width: 204px;height: 46px;font-size: 34px;color: #F9F300;line-height: 46px;}
+#gamePic .title .yellowline {width: 290px;height: 7px;background: url(../images/yellowSmallLine.png)no-repeat;}
+
+
+/* 游戏图片展示 */
+#gamePic .gameRotation {width: 100%;height: 560px;margin-top: 228px;position: absolute;overflow: hidden;}
+#gamePic .btn {width: 1912px;height: 130px;position: absolute;margin-top: 207px;display: flex;justify-content: space-between;}
+#gamePic .gameRotation .gamePicBox {width: 100%;height: 545px;position: absolute;margin-left: -1050px;margin-top: 15px;transition: all 0.5s linear;}
+#gamePic .gameRotation .gamePicBox ul {width: 1912px;height: 545px;display: flex;transform-origin: center center 0;transition: 0.5s;
+margin-left: 460px;}
+#gamePic .gameRotation .gamePicBox ul li {width: 691px;height: 386px;margin-top: 74px;margin-left: 250px;transition: all 0.5s linear;}
+#gamePic .gameRotation .gamePicBox ul img {width: 691px;height: 386px;} 
+#gamePic .gameRotation .gamePicBox ul li:nth-child(2){transform: scale(1.4);}
+
+/* 游戏截图左右按钮 */
+#gamePic .leftBtn {width: 39px;height: 130px;background: url(../images/leftBtn.png)no-repeat;position: absolute;z-index: 2;top: 218px;}
+#gamePic .rightBtn {width: 39px;height: 130px;background: url(../images/rightBtn.png)no-repeat;position: absolute;z-index: 2;top: 218px;left: 1864px;}
+
+/* 图片轮播点 */
+#gamePic .changePic {width: 206px;height: 14px;position: absolute;left: 842px;top: 832px;display: flex;justify-content: space-between;}
+#gamePic .changePic ul {width: 17px;height: 14px;background: rgba(153,153,153,1);}
+#gamePic .changePic .active {background: rgba(5,215,242,1);}
+
+
+/* 底部关于 */
+#about {width: 100%;height: 278px;background-color: rgba(249,243,0,1);position: relative;margin: 0 auto;}
+#about .logo {width: 314px;height: 144px;background: url(../images/bottomLogo.png)no-repeat;margin: 67px 0 0 216px;position: absolute;}
+@media screen and (max-width:1600px) {
+	#about .logo{margin: 67px 0 0 86px;}
+}
+#about .introduce {width: 505px;height: 140px;position: absolute;margin: 73px 0 0 728px;}
+@media screen and (max-width:1600px) {
+	#about .introduce{margin: 73px 0 0 586px;}
+}
+#about .introduce .aboutUs {width: 312px;height: 24px;font-size: 18px;font-weight: bold;color: #313000;line-height: 20px;display: flex;}
+#about .introduce .aboutUs ul:nth-child(1){width: 92px;height: 19px;border-right: 1px black solid;}
+#about .introduce .aboutUs ul:nth-child(2){width: 112px;height: 19px;text-align: center;border-right: 1px black solid;}
+#about .introduce .aboutUs ul:nth-child(3){width: 143px;text-align: center;}
+#about .introduce .statement {width: 324px;height: 42px;margin-top: 14px;font-size: 16px;color: #313000;line-height: 21px;}
+#about .introduce .company {width: 505px;height: 42px;margin-top: 16px;font-size: 16px;color: #313000;line-height: 21px;}
+
+/* 安全支付 */
+#about .payment {width: 245px;height: 140px;margin: 68px 0 0 1407px;position: absolute;}
+@media screen and (max-width:1600px) {
+	#about .payment{margin: 68px 0 0 1186px;}
+}
+#about .payment p {width: 72px;height: 24px;font-size: 18px;color: #313000;line-height: 28px;font-weight: bold;}
+#about .payment .wechat {width: 245px;height: 48px;margin-top: 10px;background: url(../images/WeChat.png)no-repeat;}
+#about .payment .alipay {width: 245px;height: 48px;margin-top: 7px;background: url(../images/Alipay.png)no-repeat;}
